@@ -1,14 +1,124 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maracatu Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <header>
+        <nav>
+            <a href="#" class="logo">Maracatu Tech</a>
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#speakers">Palestrantes</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#sponsors">Patrocinadores</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+             <button class="hamburger"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Onde a tradição encontra a inovação</h1>
+                <p>Junte-se a nós no maior evento de tecnologia e cultura do Nordeste!</p>
+                <a href="#contact" class="cta-button">Garanta sua vaga</a>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2>Sobre o Maracatu Tech</h2>
+            <p>
+                O Maracatu Tech é um evento único que celebra a rica cultura do Maracatu e a vanguarda da tecnologia. Nossa missão é criar um espaço para a troca de conhecimentos, inspirar a inovação e conectar pessoas apaixonadas por tecnologia e cultura.
+            </p>
+        </section>
+
+        <section id="speakers" class="container bg-light">
+            <h2>Palestrantes</h2>
+            <div class="speakers-grid">
+                <div class="speaker-card">
+                    <img src="https://i.pravatar.cc/150?img=68" alt="Foto do Palestrante 1">
+                    <h3>Lia de Itamaracá</h3>
+                    <p>Cirandeira e Patrimônio Cultural</p>
+                </div>
+                <div class="speaker-card">
+                    <img src="https://i.pravatar.cc/150?img=60" alt="Foto do Palestrante 2">
+                    <h3>Silvio Meira</h3>
+                    <p>Cientista e Empreendedor</p>
+                </div>
+                <div class="speaker-card">
+                    <img src="https://i.pravatar.cc/150?img=32" alt="Foto do Palestrante 3">
+                    <h3>Mestre Barachinha</h3>
+                    <p>Maracatu Nação Pernambuco</p>
+                </div>
+                 <div class="speaker-card">
+                    <img src="https://i.pravatar.cc/150?img=21" alt="Foto do Palestrante 4">
+                    <h3>Camila Achutti</h3>
+                    <p>Founder & CEO da MasterTech</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="agenda" class="container">
+            <h2>Agenda</h2>
+            <div class="agenda-tabs">
+                <button class="tab-link active" data-tab="dia1">Dia 1</button>
+                <button class="tab-link" data-tab="dia2">Dia 2</button>
+            </div>
+            <div id="dia1" class="tab-content active">
+                <div class="agenda-item">
+                    <p><strong>09:00</strong> - Abertura com Maracatu</p>
+                    <p><strong>10:00</strong> - Palestra: A História da Tecnologia em Pernambuco</p>
+                    <p><strong>11:00</strong> - Workshop: Criando seu Primeiro App</p>
+                    <p><strong>12:00</strong> - Almoço</p>
+                </div>
+            </div>
+             <div id="dia2" class="tab-content">
+                <div class="agenda-item">
+                    <p><strong>09:00</strong> - Roda de Conversa: Mulheres na Tecnologia</p>
+                    <p><strong>10:00</strong> - Palestra: O Futuro da Inteligência Artificial</p>
+                    <p><strong>11:00</strong> - Workshop: Robótica com Sucata</p>
+                    <p><strong>12:00</strong> - Encerramento com Show</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sponsors" class="container bg-light">
+            <h2>Patrocinadores</h2>
+            <div class="sponsors-grid">
+                <img src="https://via.placeholder.com/150x80.png?text=Sponsor+1" alt="Logo do Patrocinador 1">
+                <img src="https://via.placeholder.com/150x80.png?text=Sponsor+2" alt="Logo do Patrocinador 2">
+                <img src="https://via.placeholder.com/150x80.png?text=Sponsor+3" alt="Logo do Patrocinador 3">
+                <img src="https://via.placeholder.com/150x80.png?text=Sponsor+4" alt="Logo do Patrocinador 4">
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Entre em Contato</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Seu nome">
+                <input type="email" placeholder="Seu e-mail">
+                <textarea placeholder="Sua mensagem"></textarea>
+                <button type="submit" class="cta-button">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Maracatu Tech. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
