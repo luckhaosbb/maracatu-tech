@@ -15,6 +15,14 @@
     extensions = [
       # "vscodevim.vim"
       "google.gemini-cli-vscode-ide-companion"
+      "adpyke.codesnap"
+      "cbasdev.dracula-purple"
+      "eamodio.gitlens"
+      "felipecaputo.git-project-manager"
+      "mhutchie.git-graph"
+      "ms-azuretools.vscode-containers"
+      "ms-azuretools.vscode-docker"
+      "pinage404.git-extension-pack"
     ];
     # Enable previews and customize configuration
     previews = {
